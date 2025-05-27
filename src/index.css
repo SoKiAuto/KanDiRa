@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.glass-card {
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+@layer utilities {
+  .binary-pattern::before {
+    content: "0101010011010010101001010100101010101101001010010101010010101010101010101010010101";
+    position: absolute;
+    white-space: pre;
+    width: 200%;
+    height: 200%;
+    transform: rotate(-20deg);
+    opacity: 0.08;
+    animation: matrix-scroll 60s linear infinite;
+  }
+}
+
+@keyframes matrix-scroll {
+  0% { transform: rotate(-20deg) translateY(0); }
+  100% { transform: rotate(-20deg) translateY(-100%); }
+}
