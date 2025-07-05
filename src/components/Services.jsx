@@ -5,34 +5,50 @@ const services = [
   {
     title: 'Website Development',
     points: [
-      'Fast, responsive, mobile-friendly',
+      'Fast, responsive, mobile-friendly designs',
       'Built with React, Vite, TailwindCSS',
-      'SEO-ready and easy to maintain',
-      'Business, portfolio, and e-commerce',
+      'SEO-optimized and easy to maintain',
+      'Supports portfolios, businesses, e-commerce',
     ],
   },
   {
     title: 'Mobile App Development',
     points: [
-      'Custom APKs tailored to your requirements',
-      'Built with UX and performance in mind',
-      'Integrated with real-time databases',
+      'Custom Android apps tailored to your vision',
+      'Optimized for speed, UX, and reliability',
+      'Integrated with real-time databases and APIs',
     ],
   },
   {
-    title: 'Dashboards & Data Management',
+    title: 'Dashboards & Data Solutions',
     points: [
-      'Easy-to-use admin panels',
-      'Real-time data visualization',
-      'Secure, scalable MongoDB + React',
+      'Admin dashboards with intuitive controls',
+      'Live charts and analytics',
+      'Built with MongoDB + React for scalability',
     ],
   },
   {
     title: 'UI/UX & Branding',
     points: [
-      'Company & personal portfolio design',
-      'Custom logos & branding kits',
-      'Responsive, clean design using TailwindCSS',
+      'Brand-first web & mobile design approach',
+      'Custom logo, theme, and visual identity',
+      'Responsive layouts built with TailwindCSS',
+    ],
+  },
+  {
+    title: 'Digital Marketing',
+    points: [
+      'Social media advertising (Meta, Google, etc.)',
+      'Lead generation campaigns that convert',
+      'Email, SMS & WhatsApp marketing strategy',
+    ],
+  },
+  {
+    title: 'Social Media Management',
+    points: [
+      'Content planning & creation',
+      'Instagram, Facebook & LinkedIn growth',
+      'Analytics and performance reporting',
     ],
   },
 ]

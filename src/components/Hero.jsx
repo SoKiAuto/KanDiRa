@@ -40,17 +40,23 @@ const Hero = () => {
           dark:hover:shadow-[0_0_30px_rgba(129,140,248,1),0_0_80px_rgba(59,130,246,1)]
         "
       >
-        <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-6 relative inline-block px-2">
-          Your Vision,{' '}
-          <span className="text-blue-600 dark:text-blue-300 relative">
-            Our Code
-            <span className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 via-blue-600 to-indigo-500 rounded-full animate-glowUnderline"></span>
-          </span>
-        </h1>
-        <p className="text-base sm:text-lg md:text-xl text-gray-300 dark:text-gray-400 mb-8 tracking-wide px-2">
-          We craft scalable digital products with clean code, elegant UI, and seamless experience—
-          turning your tech dreams into reality.
+         <h1 className="text-center font-extrabold mb-6 px-2">
+            <span className="block text-4xl sm:text-5xl md:text-6xl">Kandira</span>
+            <span className="block text-xl sm:text-2xl md:text-5xl text-blue-600 dark:text-blue-300 mt-2">
+              Powering the Next Digital Wave
+            </span>
+          </h1>
+
+
+
+        <p className="text-base sm:text-lg md:text-xl text-gray-300 dark:text-gray-400 mb-6 tracking-wide px-2">
+          We build modern websites, apps, and software that scale — and we go beyond tech with expert digital marketing, social media management, branding, and creative design. Everything your business needs to grow online, in one place.
         </p>
+
+        <p className="text-base sm:text-lg md:text-xl italic text-gray-400 dark:text-gray-500 mb-8 px-2">
+          “We don’t just build software — we build your digital presence, from code to content to community.”
+        </p>
+
         <motion.a
           href="#contact"
           whileHover={{ scale: 1.07 }}

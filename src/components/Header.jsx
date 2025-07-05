@@ -3,15 +3,14 @@ import ThemeToggle from './ThemeToggle'
 import Scrollspy from 'react-scrollspy'
 import { motion, AnimatePresence } from 'framer-motion'
 
-const navItems = ['hero', 'about', 'services', 'projects', 'contact']
+const navItems = ['home', 'about', 'services', 'projects', 'contact']
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
 
-  // Close mobile menu on scroll or window resize for UX
   useEffect(() => {
-    const handleScrollResize = () => {
+    const handleScrollResize = () => { 
       if (menuOpen) setMenuOpen(false)
     }
     window.addEventListener('scroll', handleScrollResize)
@@ -22,7 +21,6 @@ const Header = () => {
     }
   }, [menuOpen])
 
-  // Optional: Add shadow on scroll for header
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20)
     window.addEventListener('scroll', onScroll)
@@ -41,39 +39,37 @@ const Header = () => {
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo */}
-       <a
-  href="#hero"
-  className="flex items-center space-x-2 select-none
+        <a
+          href="#home"
+          className="flex items-center space-x-2 select-none
              focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-offset-2 rounded
              transition-shadow duration-300 hover:shadow-lg"
-  onClick={(e) => {
-    e.preventDefault()
-    closeMenu()
-    document.querySelector('#hero')?.scrollIntoView({ behavior: 'smooth' })
-  }}
-  aria-label="Go to home"
-  tabIndex={0}
-  onKeyDown={(e) => {
-    if (e.key === 'Enter' || e.key === ' ') {
-      e.preventDefault()
-      closeMenu()
-      document.querySelector('#hero')?.scrollIntoView({ behavior: 'smooth' })
-    }
-  }}
-  title="Go to home section"
->
-  <img
-    src="/KanDiRa.png"
-    alt="KanDiRa Logo"
-    className="h-14 w-auto sm:h-18"
-    draggable={false}
-  />
-  <span className="text-2xl font-extrabold text-gray-900 dark:text-white">
-    KanDiRa
-  </span>
-</a>
-
-
+          onClick={(e) => {
+            e.preventDefault()
+            closeMenu()
+            document.querySelector('#home')?.scrollIntoView({ behavior: 'smooth' })
+          }}
+          aria-label="Go to home"
+          tabIndex={0}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault()
+              closeMenu()
+              document.querySelector('#home')?.scrollIntoView({ behavior: 'smooth' })
+            }
+          }}
+          title="Go to home section"
+        >
+          <img
+            src="/KanDiRa.png"
+            alt="KanDiRa Logo"
+            className="h-14 w-auto sm:h-18"
+            draggable={false}
+          />
+          <span className="text-2xl font-extrabold text-gray-900 dark:text-white">
+            KanDiRa
+          </span>
+        </a>
 
         {/* Desktop Navigation */}
         <nav aria-label="Primary Navigation" className="hidden md:block">
@@ -108,7 +104,6 @@ const Header = () => {
             aria-expanded={menuOpen}
             aria-controls="mobile-menu"
           >
-            {/* Hamburger icon bars */}
             <motion.span
               animate={menuOpen ? { rotate: 45, y: 8 } : { rotate: 0, y: 0 }}
               className="block h-1.5 w-full bg-gray-900 dark:bg-white rounded-lg origin-center"

@@ -10,17 +10,16 @@ const Footer = () => {
         text-gray-600 dark:text-gray-400
         text-sm
         transition-colors duration-500
-        mt-10
       "
     >
       &copy; {new Date().getFullYear()} KanDiRa Tech Solutions •{' '}
       <a
-        href="https://www.kandira.tech"
+        href="https://www.thekandira.com"
         target="_blank"
         rel="noopener noreferrer"
         className="text-blue-600 hover:underline dark:text-blue-400"
       >
-        www.kandira.tech
+        www.thekandira.tech
       </a>
     </footer>
   )

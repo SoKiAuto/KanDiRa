@@ -9,6 +9,7 @@ import Footer from './components/Footer'
 import 'aos/dist/aos.css'
 import AOS from 'aos'
 import BinaryBackground from './components/BinaryBackground'
+import LiveProjects from './components/LiveProjects'
 
 function App() {
   useEffect(() => {

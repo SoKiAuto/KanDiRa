@@ -3,18 +3,31 @@ import { motion } from 'framer-motion'
 
 const projects = [
   {
+    title: 'GetPesa — UPI Money Request App',
+    desc: 'A sleek UPI-based app to send payment requests, generate QR codes, share via WhatsApp, and track payment history with a smart local-first UI.',
+  },
+  {
+    title: 'Expense Tracker & Analyzer',
+    desc: 'Smart personal finance app for tracking income, expenses, and budgets — built for daily use with offline sync and category insights.',
+  },
+  {
+    title: 'Custom Portfolios for 3 Individuals & 1 Brand',
+    desc: 'Crafted modern, interactive portfolios with personal branding and smooth UI/UX for freelancers and a creative company.',
+  },
+  {
+    title: 'Digital Marketing for Retail & Chocolate Brand',
+    desc: 'Managed full-scale campaigns for 3+ businesses across Instagram and Meta Ads — content, reels, growth & reporting.',
+  },
+  {
+    title: 'Social Media for Food & Kitchen Brand',
+    desc: 'Launched and ran high-conversion campaigns, including photography, food reels, and geo-targeted promotions.',
+  },
+  {
     title: 'Dashboard for Manufacturing Company',
-    desc: 'Built a full data management dashboard with live updates and clean UI.',
-  },
-  {
-    title: 'Custom Portfolios for 5 Clients',
-    desc: 'Modern, mobile-friendly portfolios with smooth animations.',
-  },
-  {
-    title: 'Client-Specific APKs',
-    desc: 'Developed custom Android apps to meet unique business needs.',
+    desc: 'Built a complete data monitoring and control dashboard with real-time updates, login roles, and a modern UI.',
   },
 ]
+
 
 const Projects = () => {
   return (

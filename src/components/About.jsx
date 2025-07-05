@@ -41,20 +41,17 @@ const About = () => {
           dark:hover:shadow-[0_0_30px_rgba(129,140,248,1),0_0_80px_rgba(59,130,246,1)]
         "
       >
-         <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-6 relative inline-block px-2">
-          Who,{' '}
-          <span className="text-blue-600 dark:text-blue-300 relative">
-            KanDiRa
-            <span className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 via-blue-600 to-indigo-500 rounded-full animate-glowUnderline"></span>
-          </span>
+        <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-6 text-center px-2">
+          We’re <span className="text-blue-600 dark:text-blue-300">KanDiRa</span> — Builders of the Digital Future
         </h1>
 
+
+
+
         <p className="text-base sm:text-lg md:text-xl text-gray-300 dark:text-gray-400 mb-8 tracking-wide px-2">
-          At KanDiRa Tech Solutions, we transform ideas into smart, scalable digital solutions.
-          Whether you're a startup, freelancer, or established brand, we turn your vision into a reality—
-          with clean code, modern design, and seamless user experiences. We are passionate about creating
-          powerful tools that are both functional and beautifully designed.
+          At KanDiRa Tech Solutions, we build more than just software — we build digital ecosystems. Whether you're a startup, creator, or enterprise, we bring your ideas to life with cutting-edge technology, clean code, intuitive UI/UX, and impactful branding. From full-stack development to digital marketing, we’re your one-stop partner for growth, visibility, and innovation.
         </p>
+
       </motion.div>
     </section>
   )
